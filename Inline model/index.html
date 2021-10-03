@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		h1 {
+			background: #ede6ce;
+		}
+
+		h1 span {
+			margin: 160px;
+			padding: 1px;
+			border-bottom: 2px solid transparent;
+		}
+
+		h1 span:hover {
+			border-bottom: 2px solid #d71920;
+		}
+
+		/* ******************************************************************************/
+		.muscle {
+			padding: 2px;
+			/* Поля вокруг текста */
+			border: 1px dotted maroon;
+			/* Параметры рамки */
+			background: #C5E2BD;
+			/* Цвет фона */
+			white-space: nowrap;
+			/* Запрещаем перенос текста */
+		}
+
+		/* ******************************************************************************/
+		img {
+			vertical-align: middle;
+			/* Выравнивание по середине */
+		}
+
+		.icon {
+			vertical-align: middle;
+			/* Выравнивание по середине */
+			margin-left: 7px;
+			/* Отступ слева */
+			margin-right: 20px;
+			/* Отступ справа */
+			color: #ED1C24;
+			/* Цвет текста */
+		}
+
+		/* ******************************************************************************/
+		.menu {
+			margin: 0;
+			padding: 0;
+			line-height: 1.8;
+		}
+
+		.menu li {
+			display: inline;
+			background: #d9b492;
+			padding: 3px 7px;
+			white-space: nowrap;
+		}
+
+		.menu li:hover {
+			font-size: larger;
+		}
+
+		.menu li a {
+			text-decoration: none;
+			color: #fff;
+		}
+
+		/* ***************************************************************************** */
+
+		.photo {
+			background: #d9dabb;
+			width: 150px;
+			margin: 0 10px 10px 0;
+			padding: 10px 0;
+			text-align: center;
+			display: inline-block;
+			vertical-align: top;
+		}
+
+		.photo img {
+			border: 2px solid #8b8e4b;
+		}
+
+		/* ******************************************************************************/
+		main {
+			background: #eee;
+			font-size: 0;
+		}
+
+		section {
+			display: inline-block;
+			vertical-align: top;
+			min-height: 200px;
+			box-sizing: border-box;
+			padding: 15px;
+			font-size: 16px;
+		}
+
+		.col1 {
+			width: 20%;
+			background: #c8eaf5;
+		}
+
+		.col2 {
+			width: 40%;
+			background: #fee4cd;
+		}
+
+		.col3 {
+			width: 40%;
+			background: #e2edc1;
+		}
+	</style>
+</head>
+
+<body>
+	<!-- /* ******************************************************************************/ -->
+	<h1><span>Header</span><span>Header</span></h1>
+	<p style="font-size: 24px;">Lorem <q> ipsum,</q> dolor sit <a href=""> amet</a> consectetur adipisicing elit.
+		Ducimus, dolore quia quam incidunt <code>assumenda</code> ullam praesentium quo, sit asperiores, in voluptatem
+		animi amet voluptatibus magnam. Voluptas rerum aperiam rem
+		magni!
+	</p>
+	<!-- /* ******************************************************************************/ -->
+
+	<p>Лягте животом на пол. Соедините стопы вместе, согнув ноги в коленях
+		и развернув их в стороны. Руки за головой. Тяните голову руками
+		вверх и вперёд до полного сокращения <span class="muscle">мышц живота</span>.
+		Задержитесь на две секунды. Выполните восемь повторений.</p>
+	<!-- /* ******************************************************************************/ -->
+	<p>
+		<img src="image/animate.png" alt=""><span class="icon">Анимация</span>
+		<img src="image/list.png" alt=""><span class="icon">Список</span>
+		<img src="image/print.png" alt=""><span class="icon">Печать</span>
+		<img src="image/text.png" alt=""><span class="icon">Текст</span>
+	</p>
+	<!-- /* ******************************************************************************/ -->
+	<ul class="menu">
+		<li><a href="1.html">Метод простых итераций</a></li>
+		<li><a href="2.html">Метод случайных чисел</a></li>
+		<li><a href="3.html">Метод дихотомии</a></li>
+		<li><a href="4.html">Метод золотого сечения</a></li>
+	</ul>
+	<!-- /* ******************************************************************************/ -->
+	<figure class="photo">
+		<img src="image/thumb1.jpg">
+		<figcaption>Софийский собор</figcaption>
+	</figure>
+	<figure class="photo">
+		<img src="image/thumb2.jpg">
+		<figcaption>Польский костёл</figcaption>
+	</figure>
+	<figure class="photo">
+		<img src="image/thumb3.jpg">
+		<figcaption>Купеческий клуб</figcaption>
+	</figure>
+	<figure class="photo">
+		<img src="image/thumb4.jpg">
+		<figcaption>Памятник Св.&nbsp;Владимиру</figcaption>
+	</figure>
+	<!-- /* ******************************************************************************/ -->
+	<main>
+		<section class="col1">Колонка 1</section>
+		<section class="col2">Колонка 2</section>
+		<section class="col3">Колонка 3</section>
+	</main>
+	<!-- /* ******************************************************************************/ -->
+</body>
+
+</html>
