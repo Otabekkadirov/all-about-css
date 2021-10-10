@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../style.css">
+	<title>Document</title>
+	<style>
+		.container {
+			display: grid;
+			grid-gap: 5px;
+			grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+			grid-auto-rows: 100px;
+			grid-auto-flow: dense;
+		}
+
+		.horizontal {
+			grid-column: span 2;
+		}
+
+		.vertical {
+			grid-row: span 2;
+		}
+
+		.big {
+			grid-row: span 2;
+			grid-column: span 2;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="container">
+		<div><img src="../img/img1.jpg"></div>
+		<div class="vertical"><img src="../img/img2.jpg" alt=""></div>
+		<div class="horizontal"><img src="../img/img3.jpg" alt=""></div>
+		<div><img src="../img/img4.jpg" alt=""></div>
+		<div><img src="../img/img5.jpg" alt=""></div>
+		<div class="big"><img src="../img/img6.jpg" alt=""></div>
+		<div><img src="../img/img7.jpg" alt=""></div>
+		<div class="vertical"><img src="../img/img8.jpg" alt=""></div>
+		<div><img src="../img/img9.jpg" alt=""></div>
+		<div class="horizontal"><img src="../img/img10.jpg" alt=""></div>
+		<div><img src="../img/img11.jpg" alt=""></div>
+		<div class="big"><img src="../img/img12.jpg" alt=""></div>
+		<div><img src="../img/img13.jpg" alt=""></div>
+		<div class="horizontal"><img src="../img/img14.jpg" alt=""></div>
+		<div><img src="../img/img15.jpg" alt=""></div>
+		<div class="big"><img src="../img/img16.jpg" alt=""></div>
+		<div><img src="../img/img17.jpg" alt=""></div>
+		<div class="vertical"><img src="../img/img18.jpg" alt=""></div>
+	</div>
+</body>
+
+</html>

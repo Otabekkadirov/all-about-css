@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../style.css">
+	<title>Positioning</title>
+	<style>
+		.container {
+			display: grid;
+			grid-gap: 3px;
+			grid-template-columns: repeat(10, 1fr);
+			grid-template-rows: 50px 200px 50px;
+		}
+
+		.header {
+			grid-column-start: 2;
+			grid-column-end: -1;
+		}
+
+		.menu {
+			grid-row: 1 / -2;
+		}
+
+		.content {
+			grid-column: 2 / -1;
+		}
+
+		.footer {
+			grid-column-start: 1;
+			grid-column-end: -1;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="container">
+		<div class="header">HEADER</div>
+		<div class="menu">MENU</div>
+		<div class="content">CONTENT</div>
+		<div class="footer">FOOTER</div>
+	</div>
+</body>
+
+</html>
